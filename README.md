@@ -19,7 +19,7 @@ $ npm install electron-penetrate
 ```
 
 ### Usage
-First, you should open ``transparent`` in ``package.json``
+
 ```javascript
 var browserWindow = new BrowserWindow({
     transparency: true

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="electron-penetrate : Make the electronjs window penetrable. (Windows only)">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>electron-penetrate</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+            <a id="forkme_banner" href="https://github.com/zsxsoft/electron-penetrate">View on GitHub</a>
+            <h1 id="project_title">electron-penetrate</h1>
+            <h2 id="project_tagline">Make the electron window penetrable. (Windows only)</h2>
+            <section id="downloads">
+                <a class="zip_download_link" href="https://github.com/zsxsoft/electron-penetrate/zipball/master">Download this project as a .zip file</a>
+                <a class="tar_download_link" href="https://github.com/zsxsoft/electron-penetrate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <h1>
+<a id="electron-penetrate" class="anchor" href="#electron-penetrate" aria-hidden="true"><span class="octicon octicon-link"></span></a>electron-penetrate</h1>
+            <p><strong>Windows Only</strong></p>
+            <p><strong>Tested under electron 0.30.2</strong></p>
+            <p>It used Win32 API to make your electron window penetrable.</p>
+            <p>A new branch of <a href="https://github.com/zsxsoft/nw-penetrate" target="_blank">https://github.com/zsxsoft/nw-penetrate</a></p>
+            <h3>
+<a id="installion" class="anchor" href="#installion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installion</h3>
+            <div class="highlight highlight-bash"><pre>$ npm install electron-penetrate</pre></div>
+            <h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+            <p>First, you should open <code>transparent</code> in <code>package.json</code></p>
+            <div class="highlight highlight-json"><pre>  
+var browserWindow = new BrowserWindow({
+    transparency: true
+});
+</pre></div>
+            <p>Then, set a unique <code>document.title</code> dynamically (like <code>Math.random()</code>). </p>
+            <div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> tranResult <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>electron-penetrate<span class="pl-pds">"</span></span>).penetrate(<span class="pl-c1">window</span>.<span class="pl-c1">document</span>.<span class="pl-c1">title</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(tranResult);</pre></div>
+            <h2>
+<a id="中文" class="anchor" href="#%E4%B8%AD%E6%96%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>中文</h2>
+            <p>它调用了Win32API来让你的Electron窗口可被鼠标穿过。</p>
+            <p>首先打开它的transparent选项；其次，你需要设置一个独一无二的窗口标题。我觉得<code>Math.random()</code>是个不错的选择呢。</p>
+        </section>
+    </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+            <p class="copyright">electron-penetrate maintained by <a href="https://github.com/zsxsoft">zsxsoft</a></p>
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
