@@ -1,0 +1,27 @@
+{
+  "name": "electron-penetrate",
+  "version": "0.0.3",
+  "description": "Make the electron window penetrable. (Windows only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "preinstall": "node-gyp rebuild --dist-url=https://atom.io/download/atom-shell"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zsxsoft/electron-penetrate.git"
+  },
+  "keywords": [
+    "transparent",
+    "penetrate"
+  ],
+  "author": "zsx <zsx@zsxsoft.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsxsoft/electron-penetrate/issues"
+  },
+  "homepage": "https://github.com/zsxsoft/electron-penetrate",
+  "engines": {
+    "node": ">= 0.12.0"
+  }
+}
