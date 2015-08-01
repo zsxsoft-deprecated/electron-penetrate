@@ -3,8 +3,6 @@ electron-penetrate
 
 **Windows Only**
 
-**NodeJS 0.12.0+**
-
 **Tested under Electron 0.30.2**
 
 It used Win32 API to make your Electron window penetrable. 
