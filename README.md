@@ -1,6 +1,10 @@
 electron-penetrate
 ======
 
+## NO LONGER MAINTAINED
+
+Use [setIgnoreMouseEvents](https://electron.atom.io/docs/api/browser-window/#winsetignoremouseeventsignore) instead. [Example](https://github.com/zsxsoft/danmu-client/commit/d089d82bd70ebc198fe1d3021a2e1564b4b75ba8)
+
 **Windows Only**
 
 **Tested under Electron 0.30.2**
